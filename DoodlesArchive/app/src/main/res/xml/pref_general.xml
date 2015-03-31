@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="@string/pref_year_label"
+        android:key="@string/pref_year_key"
+        android:defaultValue="@string/pref_year_default"
+        android:numeric="integer"
+        android:maxLength="4"
+        android:singleLine="true" />
+
+    <ListPreference
+        android:title="@string/pref_month_label"
+        android:key="@string/pref_month_key"
+        android:defaultValue="@string/pref_month_default"
+        android:entryValues="@array/pref_month_values"
+        android:entries="@array/pref_month_options" />
+
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default" />
+
+
+</PreferenceScreen>
