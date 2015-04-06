@@ -48,8 +48,8 @@ public class DoodlesArchiveSyncAdapter extends AbstractThreadedSyncAdapter {
 
     public final String LOG_TAG = DoodlesArchiveSyncAdapter.class.getSimpleName();
     // Interval at which to sync with the doodle, in seconds.
-    // 60 seconds (1 minute) * 1440 = 24 hours
-    public static final int SYNC_INTERVAL = 60 * 1440;
+    // 60 seconds (1 minute) * 720 = 12 hours
+    public static final int SYNC_INTERVAL = 60 * 720;
     public static final int SYNC_FLEXTIME = SYNC_INTERVAL/3;
 
 
